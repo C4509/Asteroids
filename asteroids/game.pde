@@ -1,5 +1,7 @@
 void game() {
   background(#07022E);
+  int y = 500;
+
   //initialize ship
   myShip.show();
   myShip.act();
@@ -33,6 +35,16 @@ void game() {
   fill(#07022E);
   rect(110,610,12,30);
   rect(127,610,12,30);
+ //teleport cooldown indicator 
+
+   if (myShip.time < y){
+      fill(255,0,0);
+
+    } else {
+      fill(#0CF592);
+    }
+   rect(700,700,50,50); 
+    
     }
 
 

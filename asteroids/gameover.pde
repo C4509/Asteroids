@@ -21,4 +21,5 @@ void gameOverClicks() {
   mode = intro;
   score=0;
   setup();
+  timer = 0;
 }

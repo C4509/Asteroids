@@ -6,6 +6,7 @@ class Ship extends GameObject {
   int shotTimer, threshold;
   float t;
   int f;
+  int time;
   //constructor
   Ship() {
     lives = 10;
@@ -17,6 +18,7 @@ class Ship extends GameObject {
     size = 60;
     t=100;
     f=100;
+    time = 0;
   }
 
   //behaviour functions
@@ -93,9 +95,10 @@ class Ship extends GameObject {
 
     //teleport function
         time++;
-    int x = 0;
     if (akey) {
-      if (time >= 60) {
+        
+      if (time >= 500) {
+          int x = 0;
         location = new PVector(random(width), random(height));
         while (x <   myObjects.size()) {
           GameObject q = myObjects.get(x);
@@ -105,12 +108,12 @@ class Ship extends GameObject {
               time = 0;
             }
           }
-             
+               x++;    
         }
-       
+     
       }
     
     }
-    x++;
+
   }
 }

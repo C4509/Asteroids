@@ -24,6 +24,7 @@ int f;
   int placeholder= 500;
   int time = 0;
   int score = 0;
+  int cool;
 void setup() {
   size(800, 800);
   myShip = new Ship();

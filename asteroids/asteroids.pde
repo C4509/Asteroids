@@ -1,8 +1,7 @@
 //Cierra Cheung
 //October 7, 2021
-//note for Mr.Pelletier: I couldn't figure out how to make the teleport function work, 
-//however, I decided to just leave the code in the file. Also, the ship may have to fully
-//pass through an asteroid or UFO bullet to register a hit and enter immunity.
+//note for Mr.Pelletier: The ship may have to fully pass through an asteroid or 
+//UFO bullet to register a hit and enter immunity.
 //mode framework
 int mode;
 final int intro = 0;
@@ -37,7 +36,7 @@ void setup() {
   //initialize font
        edge = createFont("EdgeOfTheGalaxyRegular-OVEa6.otf", 80);
      //initialize gif
-   NumberOfFrames = 46;
+   NumberOfFrames = 72;
    gif = new PImage[NumberOfFrames];
    int i = 0;
    while(i < NumberOfFrames){

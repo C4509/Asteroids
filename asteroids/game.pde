@@ -1,6 +1,6 @@
 void game() {
   background(#07022E);
-  int y = 500;
+  int y = 300;
 
   //initialize ship
   myShip.show();

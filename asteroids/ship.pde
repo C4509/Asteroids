@@ -97,7 +97,7 @@ class Ship extends GameObject {
         time++;
     if (akey) {
         
-      if (time >= 500) {
+      if (time >= 300) {
           int x = 0;
         location = new PVector(random(width), random(height));
         while (x <   myObjects.size()) {
